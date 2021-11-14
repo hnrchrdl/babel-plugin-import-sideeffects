@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshots {"sideEffects":{"@scope/(component1|component2)":"[*]/styles.css"}}: {"sideEffects":{"@scope/(component1|component2)":"[*]/styles.css"}} 1`] = `
+
+import component1 from "@scope/component1";
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import "@scope/component1/styles.css";
+import component1 from "@scope/component1";
+
+
+`;
+
+exports[`snapshots {"sideEffects":{"^@reach/(accordion|checkbox)$":"[*]/style.css"}}: {"sideEffects":{"^@reach/(accordion|checkbox)$":"[*]/style.css"}} 1`] = `
+
+import { Accordion,  AccordionItem,  AccordionButton,  AccordionPanel } from "@reach/accordion";
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import "@reach/accordion/style.css";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+} from "@reach/accordion";
+
+
+`;
+
+exports[`snapshots {"sideEffects":{"^@scope/components$":"[*]/dist/[specifier]/styles.css"}}: {"sideEffects":{"^@scope/components$":"[*]/dist/[specifier]/styles.css"}} 1`] = `
+
+import { Component1, Component2 } from "@scope/components";
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import "@scope/components/dist/Component1/styles.css";
+import "@scope/components/dist/Component2/styles.css";
+import { Component1, Component2 } from "@scope/components";
+
+
+`;
+
+exports[`snapshots {"sideEffects":{"^@scope/components$":"[scope]/styles/[specifier]/styles.css"}}: {"sideEffects":{"^@scope/components$":"[scope]/styles/[specifier]/styles.css"}} 1`] = `
+
+import { Component1, Component2 } from "@scope/components";
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import "@scope/styles/Component1/styles.css";
+import "@scope/styles/Component2/styles.css";
+import { Component1, Component2 } from "@scope/components";
+
+
+`;
+
+exports[`snapshots {"sideEffects":{"^my-awesome-library":["[*]/style.css"]}}: {"sideEffects":{"^my-awesome-library":["[*]/style.css"]}} 1`] = `
+
+import Component1 from 'my-awesome-library/component1'
+import Component2 from 'my-awesome-library/component2'
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import "my-awesome-library/component1/style.css";
+import Component1 from "my-awesome-library/component1";
+import "my-awesome-library/component2/style.css";
+import Component2 from "my-awesome-library/component2";
+
+
+`;
+
+exports[`snapshots {"sideEffects":{"^my-awesome-library$":["[package]/global.css","[package]/[specifier]/style.css"]}}: {"sideEffects":{"^my-awesome-library$":["[package]/global.css","[package]/[specifier]/style.css"]}} 1`] = `
+
+import { Component1, Component2 } from 'my-awesome-library'
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import "my-awesome-library/global.css";
+import "my-awesome-library/Component1/style.css";
+import "my-awesome-library/Component2/style.css";
+import { Component1, Component2 } from "my-awesome-library";
+
+
+`;
+
+exports[`snapshots {"sideEffects":{},"insert":"after"}: {"sideEffects":{},"insert":"after"} 1`] = `
+
+import { Component } from '@my-scope/my-awesome-library'
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import { Component } from "@my-scope/my-awesome-library";
+import "@my-scope/my-awesome-library/dist/component/styles.css";
+
+
+`;

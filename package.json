@@ -7,9 +7,12 @@
   "author": "hnrch",
   "license": "MIT",
   "scripts": {
-    "test": "yarn jest"
+    "test": "jest",
+    "publish": "npm publish --access public"
   },
   "devDependencies": {
-    "typescript": "^4.4.4"
+    "@babel/core": "^7.16.0",
+    "babel-plugin-tester": "^10.1.0",
+    "jest": "^27.3.1"
   }
 }
