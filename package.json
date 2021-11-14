@@ -1,11 +1,15 @@
 {
   "name": "@hnrchrdl/babel-plugin-import-sideeffects",
-  "version": "0.1.0",
-  "description": "For any import statement, import one or more sideeffects.",
+  "version": "1.0.0",
+  "description": "Transform import statements to include side effects.",
   "main": "dist/index.js",
   "repository": "git@github.com:hnrchrdl/babel-plugin-import-sideeffects.git",
   "author": "hnrch",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "test": "jest",
     "publish": "npm publish --access public"
