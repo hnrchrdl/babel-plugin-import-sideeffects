@@ -1,6 +1,6 @@
 {
   "name": "@hnrchrdl/babel-plugin-import-sideeffects",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Transform import statements to include side effects.",
   "main": "dist/index.js",
   "repository": "git@github.com:hnrchrdl/babel-plugin-import-sideeffects.git",
