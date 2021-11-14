@@ -126,7 +126,7 @@ import Component2 from 'my-awesome-library/component2'
     "^@my-scope/my-awesome-library$": ({ scope, pkgName, specifier }) =>
       `@${scope}/${pkgName}/dist/${specifier.toLowerCase()}/styles.css`
   },
-  insert: 'after
+  insert: 'after'
 }]
 // code
 import { Component } from '@my-scope/my-awesome-library'
