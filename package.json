@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test": "jest",
-    "publish": "npm publish --access public"
+    "release": "npm publish --access public"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
